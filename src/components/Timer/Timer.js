@@ -16,6 +16,19 @@ const Timer = ({time}) => {
       m = (m % 60);
     }
 
+    if (s < 10){
+      s = '0' + s;
+    }
+
+    if (m < 10) {
+      m = '0' + m;
+    }
+
+    if (h < 10) {
+      h = '0' + h;
+    }
+
+
     return (h + ':' + m + ':' + s + ':' + msec);
   }
     return (
